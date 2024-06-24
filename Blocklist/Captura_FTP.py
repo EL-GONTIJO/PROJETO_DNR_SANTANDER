@@ -63,3 +63,5 @@ def capturar_e_descompactar_arquivo():
             sftp_client.close()
         ssh_client.close()
         print("Conexão SFTP fechada.")
+
+        
