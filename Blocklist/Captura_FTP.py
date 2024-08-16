@@ -94,7 +94,8 @@ def tratativa_excel(pasta_local):
 
     return True
 
-pasta_local = capturar_e_descompactar_arquivo()
-if pasta_local:
+#pasta_local = capturar_e_descompactar_arquivo()
+#if pasta_local:
     tratativa_excel(pasta_local)
 
+pasta_local = capturar_e_descompactar_arquivo()

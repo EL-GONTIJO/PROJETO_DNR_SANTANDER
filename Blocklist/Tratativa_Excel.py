@@ -3,7 +3,7 @@ import os
 import re
 from datetime import datetime
 import pandas as pd
-#from Captura_FTP import capturar_e_descompactar_arquivo
+from Captura_FTP import capturar_e_descompactar_arquivo
 
 def tratativa_excel(pasta_local):
     if not pasta_local or not os.path.exists(pasta_local):
@@ -45,9 +45,7 @@ def tratativa_excel(pasta_local):
 
     return True
  
-
-
-pasta_local = (r"C:\\Santander\\PROJETO_DNR_SANTANDER\\Blocklist\\20240731")
+pasta_local = capturar_e_descompactar_arquivo()
 if pasta_local:
     tratativa_excel(pasta_local)
 
